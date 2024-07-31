@@ -281,6 +281,7 @@ class YouTube:
         otherwise does nothing.
         """
         status, messages = extract.playability_status(self.vid_info)
+        print(status, messages)
 
         for reason in messages:
             if status == 'UNPLAYABLE':
